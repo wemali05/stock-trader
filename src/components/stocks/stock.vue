@@ -1,3 +1,3 @@
 <template>
-    <h1>Socks -stock template</h1>
+    <h1>Stocks -stock template</h1>
 </template>
