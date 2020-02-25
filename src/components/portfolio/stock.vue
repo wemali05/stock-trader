@@ -35,16 +35,17 @@ export default {
         }
     },
     methods: {
-        ...mapActions([
-             'sellStocks'
-        ]),
+        ...mapActions({
+             placeSellOrder: 'sellStocks'
+        }),
         sellStock (){
             const order = {
                 stockId: this.stock.id,
                 stockPrice: this.stockPrice,
-                quantity: quantity
+                quantity: this.quantity
             };
-            this.sellStock();
+            this.placeSellOrder(order);
+            this.quantity = 0;
         }
     },
 }
