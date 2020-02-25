@@ -4,7 +4,7 @@
             <div class="panel-heading">
                 <h3 class="panel-title">
                 {{ stock.name}}
-                <small>(price: {{ stock.price}} | Quantity: {{ stock.quantity}})</small>
+                <small>(price: {{ stock.price}} | Quantity: {{ stock.quantity }})</small>
                 </h3>
             </div>
             <div class="panel-body">
@@ -25,7 +25,7 @@
    </div>
 </template>
 <script>
-import  mapActions from    'vuex';                                                    
+import  { mapActions } from    'vuex';                                                    
 
 export default {
     props: ['stock'],
